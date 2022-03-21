@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../page';
+import Page from './page';
 import styled from 'styled-components';
 
 const Wrapper = styled.div `
