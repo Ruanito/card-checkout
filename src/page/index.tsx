@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Background from './background.svg';
-import { Header } from '../molecules';
+import { Checkout } from '../organism';
 
 const Wrapper = styled.div `
   background-image: url(${Background});
@@ -11,7 +11,7 @@ const Wrapper = styled.div `
 function Page() {
   return (
     <Wrapper>
-      <Header />
+      <Checkout />
     </Wrapper>
   )
 }
