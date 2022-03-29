@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InfoLabel } from '../atoms';
+import { InfoLabel, InputPlaceholder, InputTextField, Vector } from '../atoms';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -24,6 +24,14 @@ const InfoLabelWrapper = styled.div`
   padding: 25px 0 0 25px;
 `
 
+const InputNameWrapper = styled.div`
+  position: absolute;
+  width: 279px;
+  height: 46px;
+  left: 25px;
+  top: 74px;
+`
+
 export function Card() {
   return (
     <Wrapper>
@@ -31,6 +39,11 @@ export function Card() {
         <InfoLabelWrapper>
           <InfoLabel text="Enter details" />
         </InfoLabelWrapper>
+        <InputNameWrapper>
+          <InputPlaceholder placeholder="Name" />
+          <InputTextField />
+          <Vector />
+        </InputNameWrapper>
       </Form>
     </Wrapper>
   )
